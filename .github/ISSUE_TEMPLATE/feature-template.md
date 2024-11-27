@@ -1,7 +1,7 @@
 ---
 name: Feature Template
 about: 기능 추가 이슈 템플릿
-title: "[ ] 기능 구현"
+title: "[FEAT] -- 기능 추가"
 labels: ''
 assignees: ''
 
