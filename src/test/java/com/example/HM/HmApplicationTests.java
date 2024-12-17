@@ -1,10 +1,10 @@
-package com.example.Back;
+package com.example.HM;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackApplicationTests {
+class HmApplicationTests {
 
 	@Test
 	void contextLoads() {
