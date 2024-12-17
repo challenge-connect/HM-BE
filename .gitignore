@@ -35,3 +35,20 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### 중복 항목 제거 ###
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+### Java ###
+# Compiled class file
+*.class
