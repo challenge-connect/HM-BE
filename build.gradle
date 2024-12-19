@@ -18,9 +18,22 @@ repositories {
 }
 
 dependencies {
+	// Spring Boot Starter Web (웹 관련 의존성)
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// Spring Boot Starter Data JPA (JPA 관련 의존성)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Spring Boot Starter Test (테스트 용도)
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// MySQL Connector/J (MySQL JDBC 드라이버)
+	runtimeOnly 'com.mysql:mysql-connector-j'
+
+	// Optional: Lombok (자동으로 Getter/Setter 등 생성하는 라이브러리)
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
