@@ -1,6 +1,6 @@
-package com.example.HM.DTO;
+package com.example.HM.Member.DTO;
 
-import com.example.HM.Entity.MemberEntity;
+import com.example.HM.Member.Entity.MemberEntity;
 import lombok.*;
 
 @Getter
@@ -12,6 +12,7 @@ public class MemberDTO {
     private Long id;
     private String email;
     private String password;
+    private String confirmPassword;
     private String name;
 
     public static MemberDTO toMemberDTO(MemberEntity memberEntity) {

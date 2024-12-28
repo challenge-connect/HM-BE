@@ -1,6 +1,6 @@
-package com.example.HM.Entity;
+package com.example.HM.Member.Entity;
 
-import com.example.HM.DTO.MemberDTO;
+import com.example.HM.Member.DTO.MemberDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,23 +18,14 @@ public class MemberEntity {
     @Column(unique = true)
     private String email;
 
-    @Column
+    @Column(nullable = false)
     private String password;
 
-    @Column
+    @Column(nullable = false)
     private String name;
 
     public static MemberEntity toMemberEntity(MemberDTO memberDTO) {
         MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setEmail(memberDTO.getEmail());
-        memberEntity.setPassword(memberDTO.getPassword());
-        memberEntity.setName(memberDTO.getName());
-        return memberEntity;
-    }
-
-    public static MemberEntity toUpdateMemberEntity(MemberDTO memberDTO) {
-        MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setId(memberDTO.getId());
         memberEntity.setEmail(memberDTO.getEmail());
         memberEntity.setPassword(memberDTO.getPassword());
         memberEntity.setName(memberDTO.getName());
